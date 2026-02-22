@@ -7,13 +7,14 @@ body{
 	padding: 5% 15%;
 	font-family: sans-serif;
 	background: 
-    linear-gradient(rgb(255, 255, 255), rgba(0,0,0,0.5)),
+    linear-gradient(rgb(59, 59, 59), rgba(0,0,0,0.5)),
     url("../Assets/img/homebg3.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100vh;
 }
 section{
+	margin-top: 3%;
 	height: 100%;
 	gap: 3%;
 	display: flex;
@@ -25,6 +26,7 @@ section{
 	background-repeat: no-repeat;
 	color: white;
 	display: flex;
+	box-shadow: #fff 5px;
 }
 .first,.second{
 	width: 60%;
@@ -103,4 +105,44 @@ section{
 .second_content .contact .links a{
 	text-decoration: none;
 	color: #212121;
+}
+.site:hover{
+	color:rgb(255, 255, 255) !important;
+}
+@media screen and (max-width:1043px) {
+	body{
+		font-size: 0.8rem;
+	}
+	.second_content ul li{
+	width: 50px;
+	height: 20px;
+	}
+}
+@media screen and (max-width:900px) {
+	body{
+		font-size: 0.7rem;
+	}
+		.second_content ul li{
+	width: 30px;
+	}
+}
+@media screen and (max-width:700px) {
+	body{
+		background-color: #212121;
+		display: flex;
+		justify-content: center;
+	}
+	section{
+		display: flex;
+		flex-direction: column;
+		height: fit-content;
+		align-items: center;
+	}
+	.first{
+		height: 100vh !important;
+		margin-bottom: 30%;
+	}
+	.first,.second{
+	width: 100%;
+}
 }
