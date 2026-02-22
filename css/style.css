@@ -139,7 +139,7 @@ section{
 		align-items: center;
 	}
 	.first{
-		height: 100vh !important;
+		height: 400px !important;
 		margin-bottom: 30%;
 	}
 	.first,.second{
